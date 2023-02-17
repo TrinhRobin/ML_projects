@@ -1,0 +1,31 @@
+python3 -m venv env
+\path\to\env\scripts\activate
+pip install -r requirements.txt
+
+##Saving the model 
+python train_model.py  
+##Running application
+uvicorn main:app   
+--host 0.0.0.0 --port 8000
+##test console 
+curl -X 'POST' \
+  'http://127.0.0.1:8000/prediction' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "gender": 1,
+  "age":25.0,
+  "age_o": 32.0,
+  "attractive_o": 6,
+  "sinsere_o": 2,
+  "funny_o": 7,
+  "intelligence_o": 4,
+  "funny_partner": 3,
+  "attractive_partner": 7,
+  "sincere_partner": 3,
+  "intelligence_partner":6,
+  "shared_interests_important": 8
+}'
+
+  ##tets file 
+  python request_test.py  
