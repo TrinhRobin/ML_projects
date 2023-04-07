@@ -1,5 +1,4 @@
 import pandas as pd
-
 import joblib
 from sklearn.ensemble import RandomForestClassifier
 
@@ -26,4 +25,4 @@ if __name__ == '__main__':
     
     model = RandomForestClassifier(max_depth=10, min_samples_split=5, random_state=0)
     model.fit(X, y)
-    joblib.dump(model, "model.joblib")
+    joblib.dump(model, "model2.joblib")
