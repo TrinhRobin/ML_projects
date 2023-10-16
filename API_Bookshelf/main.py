@@ -41,4 +41,4 @@ async def search_books(query: str):
     # Recherche le livre le plus proche en utilisant Damerau-Levenshtein distance
     closest_title = min(books_db['Title'], key=lambda x: damerau_levenshtein_distance(query, x))
     closest_book = books_db[books_db['Title'] == closest_title].iloc[0].to_dict()
-    return {'answer' : closest_book, 'title': closest_title}
+    return {'closest book' : closest_book, 'score': damerau_levenshtein_distance(query,closest_title)}
