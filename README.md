@@ -9,3 +9,8 @@ Various samples of small ML projects with a streamlit
 - [PCA documentation] (https://scikit-learn.org/stable/modules/decomposition.html#pca)
 - [Grid Search CV Doucmentation](https://scikit-learn.org/stable/modules/grid_search.html)
 
+## API Bookshelf
+
+- [Damerau-Levensthein Distance](https://medium.com/@evertongomede/the-damerau-levenshtein-distance-a-powerful-measure-for-string-similarity-22dc4b150f0a)
+- [textdistance](https://pypi.org/project/textdistance/)
+- [jellyfish](https://github.com/jamesturk/jellyfish)
