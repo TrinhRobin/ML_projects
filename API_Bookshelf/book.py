@@ -4,9 +4,15 @@ class Book(BaseModel):
     title: str
     author: str
     genre:str
-    height: int
+    page: int
     publisher :str
     publication_year: int
+    isbn : int
+
+class ReviewRequest(BaseModel):
+    book: Book
+    rating: float
+    comment: str
 
 
 def damerau_levenshtein_distance(s1, s2):
