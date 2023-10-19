@@ -14,3 +14,8 @@ Various samples of small ML projects with a streamlit
 - [Damerau-Levensthein Distance](https://medium.com/@evertongomede/the-damerau-levenshtein-distance-a-powerful-measure-for-string-similarity-22dc4b150f0a)
 - [textdistance](https://pypi.org/project/textdistance/)
 - [jellyfish](https://github.com/jamesturk/jellyfish)
+
+- ideas : Ajouter un champ dejà lu ou non pour les livres
+- score de similarité entre les livres 
+- système de recommandation de livres
+- affichers top 10 d'une catégories de livres
